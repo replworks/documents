@@ -33,9 +33,10 @@ The system should allow developers to compose FRAMEWORK.md from framework specif
 ### React Ecosystem
 
 - [x] REACT_VITE.md
+- [x] ASTRO.md
+- [x] VANILLA.md
 - [ ] NEXTJS.md
 - [ ] REMIX.md
-- [ ] ASTRO.md
 
 ### Laravel Ecosystem
 

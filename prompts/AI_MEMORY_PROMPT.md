@@ -1,0 +1,11 @@
+# AI_MEMORY_PROMPT.md
+
+Generate AI_MEMORY.md from this conversation.
+
+Preserve decision-making context.
+
+Focus on why decisions were made.
+
+Assume the document will be provided to a future AI session.
+
+Optimize for context recovery, not human readability.
