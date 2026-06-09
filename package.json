@@ -1,0 +1,16 @@
+{
+  "name": "replworks-documents",
+  "scripts": {
+    "lint": "markdownlint '**/*.md'",
+    "lint:fix": "markdownlint --fix '**/*.md'",
+    "format:check": "prettier --check '**/*.md'",
+    "format": "prettier --write '**/*.md'",
+    "validate": "npm run lint && npm run format",
+    "fix": "npm run lint:fix && npm run format:fix"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "markdownlint-cli": "^0.48.0",
+    "prettier": "^3.8.3"
+  }
+}

@@ -1,0 +1,15 @@
+# http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = false
+
+[*.md]
+# 마크다운은 줄바꿈을 위해 행 끝에 공백 2개를 남기는 문법이 있으므로, 
+# 우발적인 공백 제거를 막기 위해 false로 명시해 줍니다.
+trim_trailing_whitespace = false

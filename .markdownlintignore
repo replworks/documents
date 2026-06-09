@@ -1,0 +1,7 @@
+node_modules/
+.github/
+dist/
+.astro/
+package-lock.json
+package.json
+CHANGELOG.md
