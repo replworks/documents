@@ -50,21 +50,21 @@ Documentation should provide constraints, not tutorials.
 
 Good documentation tells AI:
 
-* what exists
-* where things belong
-* what is allowed
-* what is forbidden
+- what exists
+- where things belong
+- what is allowed
+- what is forbidden
 
 Bad documentation explains React, Laravel, FastAPI, etc.
 
 The project follows:
 
-* AI First
-* Constraints Over Knowledge
-* Explicit Over Implicit
-* Latest Stable Only
-* Official Recommendations First
-* Do Not Guess
+- AI First
+- Constraints Over Knowledge
+- Explicit Over Implicit
+- Latest Stable Only
+- Official Recommendations First
+- Do Not Guess
 
 ---
 
@@ -72,20 +72,20 @@ The project follows:
 
 The project owner prefers:
 
-* strong conventions
-* predictable structures
-* minimal architectural creativity
-* fewer frameworks
-* fewer options
-* fewer layers
+- strong conventions
+- predictable structures
+- minimal architectural creativity
+- fewer frameworks
+- fewer options
+- fewer layers
 
 The project owner dislikes:
 
-* unnecessary abstractions
-* architecture invented by AI
-* speculative folder structures
-* excessive flexibility
-* legacy compatibility requirements
+- unnecessary abstractions
+- architecture invented by AI
+- speculative folder structures
+- excessive flexibility
+- legacy compatibility requirements
 
 ---
 
@@ -93,11 +93,11 @@ The project owner dislikes:
 
 A framework is worth supporting when:
 
-* it is commonly used for new projects
-* it has strong conventions
-* it has predictable structure
-* it is AI-friendly
-* it is likely to be used by solo developers, indie hackers, startups, or AI-assisted developers
+- it is commonly used for new projects
+- it has strong conventions
+- it has predictable structure
+- it is AI-friendly
+- it is likely to be used by solo developers, indie hackers, startups, or AI-assisted developers
 
 Popularity alone is not enough.
 
@@ -107,30 +107,30 @@ Popularity alone is not enough.
 
 Supported:
 
-* VANILLA
-* REACT_VITE
-* ASTRO
-* NEXTJS
-* FASTAPI
+- VANILLA
+- REACT_VITE
+- ASTRO
+- NEXTJS
+- FASTAPI
 
 Planned:
 
-* LARAVEL
+- LARAVEL
 
 Excluded:
 
-* DJANGO
-* NUXT
-* SVELTEKIT
-* SPRING_BOOT
-* ASPNET_CORE
+- DJANGO
+- NUXT
+- SVELTEKIT
+- SPRING_BOOT
+- ASPNET_CORE
 
 Reasons vary, but usually involve:
 
-* low probability of actual usage
-* weak convention enforcement
-* architectural fragmentation
-* poor fit for AI-assisted development
+- low probability of actual usage
+- weak convention enforcement
+- architectural fragmentation
+- poor fit for AI-assisted development
 
 ---
 
@@ -138,12 +138,12 @@ Reasons vary, but usually involve:
 
 Framework documents should contain:
 
-* stack
-* versions
-* project structure
-* file placement rules
-* generation rules
-* constraints
+- stack
+- versions
+- project structure
+- file placement rules
+- generation rules
+- constraints
 
 Do not split STACK and PROJECT_STRUCTURE into separate documents.
 
@@ -151,9 +151,9 @@ One framework document should contain all framework-related rules.
 
 Examples:
 
-* REACT_VITE.md
-* NEXTJS.md
-* FASTAPI.md
+- REACT_VITE.md
+- NEXTJS.md
+- FASTAPI.md
 
 ---
 
@@ -169,8 +169,8 @@ Project configuration remains the source of truth.
 
 Examples:
 
-* package.json
-* pyproject.toml
+- package.json
+- pyproject.toml
 
 If project configuration exists, follow it.
 
@@ -184,9 +184,9 @@ FastAPI should remain minimal.
 
 Do not introduce:
 
-* services
-* repositories
-* controllers
+- services
+- repositories
+- controllers
 
 unless explicitly requested.
 
@@ -202,10 +202,10 @@ Django was intentionally excluded.
 
 Reasoning:
 
-* highly fragmented architecture styles
-* inconsistent project structures
-* heavy customization across teams
-* difficult for AI to predict correctly
+- highly fragmented architecture styles
+- inconsistent project structures
+- heavy customization across teams
+- difficult for AI to predict correctly
 
 The issue is not technical quality.
 
@@ -217,17 +217,17 @@ The issue is predictability.
 
 Future work may include:
 
-* additional framework specifications
-* specification generators
-* CLI tooling
-* project detection
-* framework composition
+- additional framework specifications
+- specification generators
+- CLI tooling
+- project detection
+- framework composition
 
 Potential examples:
 
-* replworks detect
-* replworks generate
-* replworks validate
+- replworks detect
+- replworks generate
+- replworks validate
 
 Framework specifications may eventually be generated from project dependencies.
 

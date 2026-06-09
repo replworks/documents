@@ -4,9 +4,9 @@
 
 REQUIRED
 
-* HTML5
-* CSS3
-* JavaScript ES2024
+- HTML5
+- CSS3
+- JavaScript ES2024
 
 USE_DECLARED_STACK_ONLY
 
@@ -187,18 +187,18 @@ AVOID_UNNECESSARY_ABSTRACTIONS
 
 ## FORBIDDEN_TOOLS
 
-* React
-* Vue
-* Angular
-* Svelte
-* Next.js
-* Nuxt
-* Astro
-* Vite
-* Webpack
-* Parcel
-* Rollup
-* jQuery
+- React
+- Vue
+- Angular
+- Svelte
+- Next.js
+- Nuxt
+- Astro
+- Vite
+- Webpack
+- Parcel
+- Rollup
+- jQuery
 
 DO_NOT_INTRODUCE_FORBIDDEN_TOOLS
 

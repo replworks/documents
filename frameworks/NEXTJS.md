@@ -4,15 +4,15 @@
 
 REQUIRED
 
-* Next.js 16.x
-* React 19.x
-* JavaScript
+- Next.js 16.x
+- React 19.x
+- JavaScript
 
 OPTIONAL
 
-* TailwindCSS 4.x
-* TypeScript
-* next-intl
+- TailwindCSS 4.x
+- TypeScript
+- next-intl
 
 USE_DECLARED_STACK_ONLY
 
@@ -239,13 +239,13 @@ ACCESSIBILITY_OVERRIDES_VISUAL_PREFERENCES
 
 ## FORBIDDEN_DIRECTORIES
 
-* pages
-* src
-* features
-* shared
-* widgets
-* modules
-* views
+- pages
+- src
+- features
+- shared
+- widgets
+- modules
+- views
 
 DO_NOT_CREATE_FORBIDDEN_DIRECTORIES
 
@@ -257,23 +257,23 @@ UNLESS_EXPLICITLY_REQUESTED
 
 ALLOWED_ROOT_DIRECTORIES
 
-* app
-* components
-* data
-* hooks
-* utils
-* styles
-* images
-* public
+- app
+- components
+- data
+- hooks
+- utils
+- styles
+- images
+- public
 
 ALLOWED_ROOT_FILES
 
-* package.json
-* next.config.js
-* next.config.mjs
-* README.md
-* jsconfig.json
-* tsconfig.json
+- package.json
+- next.config.js
+- next.config.mjs
+- README.md
+- jsconfig.json
+- tsconfig.json
 
 DO_NOT_CREATE_UNDEFINED_ROOT_DIRECTORIES
 

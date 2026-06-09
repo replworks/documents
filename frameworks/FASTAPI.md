@@ -4,16 +4,16 @@
 
 REQUIRED
 
-* Python 3.13+
-* FastAPI
-* Pydantic 2.x
-* Uvicorn
+- Python 3.13+
+- FastAPI
+- Pydantic 2.x
+- Uvicorn
 
 OPTIONAL
 
-* SQLAlchemy
-* Alembic
-* PostgreSQL
+- SQLAlchemy
+- Alembic
+- PostgreSQL
 
 USE_DECLARED_STACK_ONLY
 
@@ -186,10 +186,10 @@ PREFER_SIMPLE_OVER_COMPLEX
 
 ## FORBIDDEN_DIRECTORIES
 
-* src
-* services
-* repositories
-* controllers
+- src
+- services
+- repositories
+- controllers
 
 DO_NOT_CREATE_FORBIDDEN_DIRECTORIES
 
@@ -201,14 +201,14 @@ UNLESS_EXPLICITLY_REQUESTED
 
 ALLOWED_ROOT_DIRECTORIES
 
-* app
-* tests
+- app
+- tests
 
 ALLOWED_ROOT_FILES
 
-* pyproject.toml
-* README.md
-* .env.example
+- pyproject.toml
+- README.md
+- .env.example
 
 DO_NOT_CREATE_UNDEFINED_ROOT_DIRECTORIES
 

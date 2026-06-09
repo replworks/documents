@@ -4,14 +4,14 @@
 
 REQUIRED
 
-* Astro 6.x
-* JavaScript
+- Astro 6.x
+- JavaScript
 
 OPTIONAL
 
-* TailwindCSS 4.x
-* React 19.x
-* MDX
+- TailwindCSS 4.x
+- React 19.x
+- MDX
 
 USE_DECLARED_STACK_ONLY
 
@@ -226,19 +226,19 @@ IMAGE_FILES -> kebab-case
 
 EXAMPLES
 
-* Header.astro
+- Header.astro
 
-* HeroSection.astro
+- HeroSection.astro
 
-* PostLayout.astro
+- PostLayout.astro
 
-* navigationData.js
+- navigationData.js
 
-* faqData.js
+- faqData.js
 
-* getting-started.md
+- getting-started.md
 
-* first-blog-post.md
+- first-blog-post.md
 
 ---
 
@@ -250,11 +250,11 @@ UNLESS_REQUIRED_BY_ASTRO
 
 ALLOWED_ROOT_FILES
 
-* astro.config.mjs
-* content.config.ts
-* package.json
-* README.md
-* tsconfig.json
+- astro.config.mjs
+- content.config.ts
+- package.json
+- README.md
+- tsconfig.json
 
 ---
 
