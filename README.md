@@ -39,12 +39,14 @@ Instead of explaining how frameworks work, these documents define how projects s
 
 ```text
 .
-├── AGENTS.md
 ├── ARCHITECTURE.md
-├── IDEAS.md
-├── LONG_CONTEXT.md
-├── PITCHING_SCRIPT.md
 ├── TASKS.md
+├── AGENTS.md
+├── AI_MEMORY.md
+│
+├── docs/
+│   ├── IDEAS.md
+│   └── PITCHING_SCRIPT.md
 │
 ├── frameworks/
 │   ├── REACT_VITE.md
@@ -95,7 +97,7 @@ Project-specific architecture decisions.
 
 Current project status and roadmap.
 
-### LONG_CONTEXT.md
+### AI_MEMORY.md
 
 Long-term project memory preserved across future sessions.
 

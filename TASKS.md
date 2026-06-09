@@ -23,7 +23,7 @@ The system should allow developers to compose FRAMEWORK.md from framework specif
 - [x] IDEAS.md
 - [x] PITCHING_SCRIPT.md
 - [ ] ARCHITECTURE.md
-- [ ] LONG_CONTEXT.md
+- [ ] AI_MEMORY.md
 - [ ] TASKS.md refinement
 
 ---

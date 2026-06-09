@@ -1,220 +1,192 @@
 # ARCHITECTURE.md
 
-# ReplWorks Documents Architecture
+## PURPOSE
 
-## 개요
+DEFINE_PROJECT_DOCUMENT_ARCHITECTURE
 
-ReplWorks Documents는 AI 에이전트 기반 개발을 위한 문서 템플릿 저장소이다.
+DEFINE_DOCUMENT_RESPONSIBILITIES
 
-이 저장소의 목적은 프로젝트 문서를 표준화하는 것이 아니라,
-
-AI가 프로젝트를 이해하기 위해 필요한 컨텍스트를 계층적으로 제공하는 것이다.
+DEFINE_DOCUMENT_RELATIONSHIPS
 
 ---
 
-# 핵심 개념
-
-AI는 프로젝트를 직접 이해하지 않는다.
-
-AI는 입력된 컨텍스트를 통해 프로젝트를 이해한다.
-
-따라서 프로젝트의 품질은 AI 모델 자체보다 컨텍스트 품질에 크게 의존한다.
-
-ReplWorks Documents는 이 컨텍스트를 구조화하기 위한 문서 아키텍처를 제공한다.
-
----
-
-# 컨텍스트 계층
-
-프로젝트 컨텍스트는 다음 계층으로 구성된다.
+## PROJECT_DOCUMENTS
 
 ```text
-LONG_CONTEXT
-    ↓
-ARCHITECTURE
-    ↓
-FRAMEWORK
-    ↓
-TASKS
-    ↓
-AGENT EXECUTION
+ARCHITECTURE.md
+FRAMEWORK.md
+TASKS.md
+AGENTS.md
 ```
 
 ---
 
-## LONG_CONTEXT
+## ARCHITECTURE.md
 
-가장 상위 계층.
+PURPOSE
 
-프로젝트가 존재하는 이유를 설명한다.
+DEFINE_SYSTEM_STRUCTURE
 
-포함 내용:
+DEFINE_COMPONENT_BOUNDARIES
 
-- 제품 비전
-- 목표 사용자
-- 핵심 가치
-- 장기 방향성
-- 해결하려는 문제
+DEFINE_PROJECT_ORGANIZATION
 
-질문:
+CONTAINS
 
-"왜 이 프로젝트를 만드는가?"
+* components
+* layers
+* modules
+* data_flow
+* responsibility_boundaries
 
----
+QUESTION
 
-## ARCHITECTURE
-
-시스템 구조를 설명한다.
-
-포함 내용:
-
-- 주요 구성 요소
-- 계층 구조
-- 데이터 흐름
-- 책임 분리
-
-질문:
-
-"이 프로젝트는 어떻게 구성되는가?"
+HOW_IS_THE_PROJECT_STRUCTURED
 
 ---
 
-## FRAMEWORK
+## FRAMEWORK.md
 
-기술 스택과 개발 규칙을 설명한다.
+PURPOSE
 
-포함 내용:
+DEFINE_IMPLEMENTATION_RULES
 
-- 사용 기술
-- 폴더 구조
-- 네이밍 규칙
-- Import 규칙
-- 금지 사항
+DEFINE_TECHNICAL_CONSTRAINTS
 
-질문:
+CONTAINS
 
-"어디에 무엇을 만들어야 하는가?"
+* stack
+* versions
+* directory_structure
+* file_placement
+* naming_rules
+* restrictions
 
----
+QUESTION
 
-## TASKS
-
-현재 작업 상태를 정의한다.
-
-포함 내용:
-
-- 현재 작업
-- 우선순위
-- 완료 상태
-- 다음 단계
-
-질문:
-
-"지금 무엇을 해야 하는가?"
+HOW_SHOULD_THE_PROJECT_BE_IMPLEMENTED
 
 ---
 
-## AGENTS
+## TASKS.md
 
-에이전트 행동 규칙을 정의한다.
+PURPOSE
 
-포함 내용:
+TRACK_CURRENT_WORK
 
-- 작업 절차
-- 검증 절차
-- 문서 참조 순서
-- 실패 시 행동
+TRACK_PROGRESS
 
-질문:
+TRACK_NEXT_ACTIONS
 
-"어떻게 행동해야 하는가?"
+CONTAINS
+
+* active_tasks
+* completed_tasks
+* priorities
+* next_steps
+
+QUESTION
+
+WHAT_SHOULD_BE_DONE_NEXT
 
 ---
 
-# 문서 의존성
+## AGENTS.md
+
+PURPOSE
+
+DEFINE_AGENT_BEHAVIOR
+
+DEFINE_EXECUTION_RULES
+
+DEFINE_DOCUMENT_LOADING_ORDER
+
+CONTAINS
+
+* workflow
+* validation_rules
+* execution_rules
+
+QUESTION
+
+HOW_SHOULD_THE_AGENT_OPERATE
+
+---
+
+## DOCUMENT_DEPENDENCIES
 
 ```text
-LONG_CONTEXT
-        ↓
 ARCHITECTURE
         ↓
 FRAMEWORK
         ↓
 TASKS
-        ↓
+```
+
+AGENTS_READS_ALL_DOCUMENTS
+
+---
+
+## DOCUMENT_RESPONSIBILITIES
+
+ARCHITECTURE
+
+DEFINES_STRUCTURE
+
+---
+
+FRAMEWORK
+
+DEFINES_IMPLEMENTATION_CONSTRAINTS
+
+---
+
+TASKS
+
+DEFINES_CURRENT_WORK
+
+---
+
 AGENTS
-```
 
-상위 문서는 하위 문서에 영향을 준다.
-
-하위 문서는 상위 문서를 변경하지 않는다.
-
-예:
-
-- TASKS는 ARCHITECTURE를 변경할 수 없다.
-- FRAMEWORK는 LONG_CONTEXT를 변경할 수 없다.
+DEFINES_AGENT_BEHAVIOR
 
 ---
 
-# 프레임워크 템플릿 구조
-
-저장소는 프레임워크별 규칙을 템플릿으로 제공한다.
+## FRAMEWORK_TEMPLATE_FLOW
 
 ```text
-frameworks/
- ├─ REACT_VITE.md
- ├─ NEXTJS.md
- ├─ LARAVEL.md
- ├─ FASTAPI.md
- └─ DJANGO.md
-```
-
-새 프로젝트 생성 시 적절한 템플릿을 선택하여 FRAMEWORK.md로 복사한다.
-
-```text
-REACT_VITE.md
-        ↓
+frameworks/REACT_VITE.md
+                ↓
 project/FRAMEWORK.md
 ```
 
----
+FRAMEWORK_TEMPLATES_ARE_REUSABLE
 
-# 설계 원칙
-
-## AI First
-
-모든 문서는 AI 소비를 우선한다.
+PROJECT_FRAMEWORK_MD_IS_PROJECT_SPECIFIC
 
 ---
 
-## Explicit Over Implicit
+## DESIGN_RULES
 
-규칙은 추론하지 않는다.
+AI_FIRST
 
-명시한다.
+EXPLICIT_OVER_IMPLICIT
 
----
+CONSTRAINTS_OVER_EXPLANATIONS
 
-## Constraints Over Knowledge
+CONSISTENCY_OVER_FLEXIBILITY
 
-AI는 이미 기술을 알고 있다.
-
-문서는 기술 설명보다 프로젝트 제약조건을 제공해야 한다.
+REUSE_OVER_REINVENTION
 
 ---
 
-## Consistency Over Flexibility
+## CORE_PRINCIPLE
 
-프로젝트마다 문서 구조가 달라지지 않는다.
+ARCHITECTURE_DEFINES_STRUCTURE
 
-동일한 문서 구조를 유지한다.
+FRAMEWORK_DEFINES_CONSTRAINTS
 
----
+TASKS_DEFINE_EXECUTION
 
-# 최종 목표
-
-AI가 프로젝트를 추측하도록 만드는 것이 아니라,
-
-문서를 통해 프로젝트를 이해하도록 만드는 것.
-
-ReplWorks Documents는 이를 위한 표준 컨텍스트 구조를 제공한다.
+AGENTS_DEFINE_BEHAVIOR

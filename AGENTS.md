@@ -82,7 +82,6 @@ Examples:
 
 - ARCHITECTURE.md
 - TASKS.md
-- LONG_CONTEXT.md
 
 Purpose:
 

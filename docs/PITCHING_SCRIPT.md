@@ -71,7 +71,7 @@ AGENTS.md
 FRAMEWORK.md
 ARCHITECTURE.md
 TASKS.md
-LONG_CONTEXT.md
+AI_MEMORY.md
 ```
 
 이 문서들은 사람을 위한 문서가 아닙니다.

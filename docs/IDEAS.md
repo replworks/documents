@@ -119,7 +119,7 @@ AI는 추측하지 않는다.
 AGENTS.md
 ARCHITECTURE.md
 TASKS.md
-LONG_CONTEXT.md
+AI_MEMORY.md
 
 FRAMEWORK.md
 ```
@@ -136,7 +136,7 @@ AI 에이전트의 행동 규칙
 
 현재 작업 목록
 
-### LONG_CONTEXT.md
+### AI_MEMORY.md
 
 제품 비전 및 장기 컨텍스트
 
