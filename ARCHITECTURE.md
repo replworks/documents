@@ -33,11 +33,11 @@ DEFINE_PROJECT_ORGANIZATION
 
 CONTAINS
 
-* components
-* layers
-* modules
-* data_flow
-* responsibility_boundaries
+- components
+- layers
+- modules
+- data_flow
+- responsibility_boundaries
 
 QUESTION
 
@@ -55,12 +55,12 @@ DEFINE_TECHNICAL_CONSTRAINTS
 
 CONTAINS
 
-* stack
-* versions
-* directory_structure
-* file_placement
-* naming_rules
-* restrictions
+- stack
+- versions
+- directory_structure
+- file_placement
+- naming_rules
+- restrictions
 
 QUESTION
 
@@ -80,10 +80,10 @@ TRACK_NEXT_ACTIONS
 
 CONTAINS
 
-* active_tasks
-* completed_tasks
-* priorities
-* next_steps
+- active_tasks
+- completed_tasks
+- priorities
+- next_steps
 
 QUESTION
 
@@ -103,9 +103,9 @@ DEFINE_DOCUMENT_LOADING_ORDER
 
 CONTAINS
 
-* workflow
-* validation_rules
-* execution_rules
+- workflow
+- validation_rules
+- execution_rules
 
 QUESTION
 
