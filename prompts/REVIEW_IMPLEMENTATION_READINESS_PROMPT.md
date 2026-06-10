@@ -2,9 +2,9 @@
 
 Review the following documents together:
 
-* PRODUCT_SPEC.md
-* ARCHITECTURE.md
-* FRAMEWORK.md
+- PRODUCT_SPEC.md
+- ARCHITECTURE.md
+- FRAMEWORK.md
 
 Assume you are responsible for implementing the entire product.
 
@@ -26,16 +26,16 @@ Do not modify requirements.
 
 Focus on identifying:
 
-* missing requirements
-* missing architectural responsibilities
-* missing implementation constraints
-* ambiguous behavior
-* conflicting definitions
-* undefined ownership
-* undefined flows
-* undefined inputs
-* undefined outputs
-* contradictions between documents
+- missing requirements
+- missing architectural responsibilities
+- missing implementation constraints
+- ambiguous behavior
+- conflicting definitions
+- undefined ownership
+- undefined flows
+- undefined inputs
+- undefined outputs
+- contradictions between documents
 
 Treat the three documents as a single implementation contract.
 
@@ -43,10 +43,10 @@ A question is valid only if it blocks implementation certainty.
 
 Ignore:
 
-* personal preferences
-* alternative technologies
-* feature ideas
-* product strategy
+- personal preferences
+- alternative technologies
+- feature ideas
+- product strategy
 
 Output only a numbered list of questions.
 

@@ -29,30 +29,30 @@ Architecture must remain technology-agnostic.
 
 The document must include:
 
-* Purpose
-* Core Concepts
-* System Flow
-* Components
-* Component Responsibilities
-* Responsibility Boundaries
-* Data Flow
-* Architectural Rules
-* Failure Boundaries
-* Non-Goals
-* Architectural Invariants
+- Purpose
+- Core Concepts
+- System Flow
+- Components
+- Component Responsibilities
+- Responsibility Boundaries
+- Data Flow
+- Architectural Rules
+- Failure Boundaries
+- Non-Goals
+- Architectural Invariants
 
 Every component must have:
 
-* Responsibilities
-* Inputs
-* Outputs
-* Explicit ownership boundaries
+- Responsibilities
+- Inputs
+- Outputs
+- Explicit ownership boundaries
 
 Identify:
 
-* missing responsibilities
-* conflicting responsibilities
-* ambiguous flows
+- missing responsibilities
+- conflicting responsibilities
+- ambiguous flows
 
 Resolve them before generating the document.
 

@@ -2,8 +2,8 @@
 
 Generate PITCHING_SCRIPT.md from:
 
-* IDEAS.md
-* this conversation
+- IDEAS.md
+- this conversation
 
 Target Audience:
 
@@ -17,12 +17,12 @@ Use information explicitly discussed during the conversation.
 
 You may expand:
 
-* market opportunity
-* target users
-* business potential
-* revenue potential
-* competitive advantages
-* growth opportunities
+- market opportunity
+- target users
+- business potential
+- revenue potential
+- competitive advantages
+- growth opportunities
 
 Only when they are supported by the conversation context.
 

@@ -37,18 +37,18 @@ The document should be sufficient for a product manager to approve the product s
 
 The document must include:
 
-* Purpose
-* Problem
-* Product Goals
-* Users
-* Inputs
-* Outputs
-* Functional Requirements
-* User Flows
-* Error Conditions
-* Non-Goals
-* Acceptance Criteria
-* Success Criteria
+- Purpose
+- Problem
+- Product Goals
+- Users
+- Inputs
+- Outputs
+- Functional Requirements
+- User Flows
+- Error Conditions
+- Non-Goals
+- Acceptance Criteria
+- Success Criteria
 
 Do not propose improvements.
 

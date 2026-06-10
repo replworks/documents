@@ -42,25 +42,25 @@ Organize tasks into phases.
 
 For each phase:
 
-* define tasks
-* define acceptance criteria
+- define tasks
+- define acceptance criteria
 
 Tasks must:
 
-* be actionable
-* be verifiable
-* be implementation-independent
+- be actionable
+- be verifiable
+- be implementation-independent
 
 Avoid:
 
-* implementation steps
-* code-level instructions
-* framework-specific instructions
+- implementation steps
+- code-level instructions
+- framework-specific instructions
 
 Include:
 
-* MVP
-* Future
+- MVP
+- Future
 
 Acceptance criteria must be objective.
 

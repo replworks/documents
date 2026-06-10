@@ -12,16 +12,16 @@ Generate an AI-oriented FRAMEWORK.md that constrains implementation.
 
 The document must:
 
-* define implementation rules
-* define architectural constraints
-* define directory structure
-* define testing rules
-* define deployment rules
-* define configuration rules
-* define security rules
-* define framework-specific conventions
-* define non-goals
-* define architectural invariants
+- define implementation rules
+- define architectural constraints
+- define directory structure
+- define testing rules
+- define deployment rules
+- define configuration rules
+- define security rules
+- define framework-specific conventions
+- define non-goals
+- define architectural invariants
 
 Optimize for implementation consistency.
 
