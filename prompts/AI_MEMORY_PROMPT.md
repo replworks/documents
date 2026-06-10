@@ -1,4 +1,4 @@
-# AI_MEMORY_PROMPT.md
+# AI Memory Prompt
 
 Generate AI_MEMORY.md from this conversation.
 
