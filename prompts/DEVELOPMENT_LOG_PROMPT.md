@@ -1,3 +1,5 @@
+# Development Log Prompt
+
 I am building software with AI.
 
 Transform this discussion into a public development log.

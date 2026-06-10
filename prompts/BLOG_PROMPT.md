@@ -1,3 +1,5 @@
+# Blog Prompt
+
 Generate a blog post draft from this discussion.
 
 Audience:
