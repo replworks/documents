@@ -6,10 +6,18 @@
     "format:check": "prettier --check '**/*.md'",
     "format": "prettier --write '**/*.md'",
     "validate": "npm run lint && npm run format",
-    "fix": "npm run lint:fix && npm run format:fix"
+    "fix": "npm run lint:fix && npm run format:fix",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,md}": [
+      "npm run format"
+    ]
   },
   "devDependencies": {
     "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
     "markdownlint-cli": "^0.48.0",
     "prettier": "^3.8.3"
   }
