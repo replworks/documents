@@ -1,258 +1,478 @@
 # AI_MEMORY.md
 
-## Purpose
+# ReplWorks Memory
 
-This document exists to transfer context between AI sessions.
-
-It is intended to be provided as part of the first prompt when starting a new conversation.
-
-The goal is not to describe the project.
-
-The goal is to preserve decision-making context.
-
-A future AI should be able to continue discussions with similar understanding and reasoning.
+Version: 2026-06
 
 ---
 
-# Project
+# Core Understanding
 
-Name: ReplWorks Documents
+ReplWorks is not a project memory system.
 
-Repository:
+Project memory is only one component.
 
-<https://github.com/replworks/documents>
+The actual goal is:
 
-Website:
+```text
+Create a repeatable workflow that turns ideas into shipped products using AI.
+```
 
-<https://www.repl.net>
+The original motivation was AI memory loss during development.
 
----
+However, memory loss was identified as a symptom rather than the root problem.
 
-# What We Are Building
+The root problem is:
 
-ReplWorks Documents is a collection of AI-oriented project specification templates.
+```text
+How can a solo founder repeatedly transform ideas into production software using AI?
+```
 
-The target audience is developers using AI-assisted development and vibe coding.
-
-The repository is not intended to teach technologies.
-
-The repository exists to provide constraints that reduce AI guessing.
-
-The primary objective is predictable AI behavior.
+ReplWorks exists to answer that question.
 
 ---
 
-# Philosophy
+# ReplWorks Definition
 
-AI already knows technologies.
+Current definition:
 
-Documentation should provide constraints, not tutorials.
+```text
+AI-Native Product Development Workflow
+```
 
-Good documentation tells AI:
+Alternative definition:
 
-- what exists
-- where things belong
-- what is allowed
-- what is forbidden
+```text
+A workflow methodology for turning ideas into software through AI-assisted execution.
+```
 
-Bad documentation explains React, Laravel, FastAPI, etc.
+ReplWorks should be positioned as a workflow system or methodology.
 
-The project follows:
+Not as a memory system.
 
-- AI First
-- Constraints Over Knowledge
-- Explicit Over Implicit
-- Latest Stable Only
-- Official Recommendations First
-- Do Not Guess
+Not as a documentation system.
+
+Not as an AI tool.
 
 ---
 
-# Development Preferences
+# Important Discovery
 
-The project owner prefers:
+The most valuable asset is not:
 
-- strong conventions
-- predictable structures
-- minimal architectural creativity
-- fewer frameworks
-- fewer options
-- fewer layers
+- AI_MEMORY.md
+- AGENTS.md
+- FRAMEWORK.md
 
-The project owner dislikes:
+The most valuable asset is:
 
-- unnecessary abstractions
-- architecture invented by AI
-- speculative folder structures
-- excessive flexibility
-- legacy compatibility requirements
+```text
+Workflow
++
+Document Generation Prompts
++
+Validation Prompts
+```
 
----
+The workflow is reusable across projects.
 
-# Framework Selection Criteria
-
-A framework is worth supporting when:
-
-- it is commonly used for new projects
-- it has strong conventions
-- it has predictable structure
-- it is AI-friendly
-- it is likely to be used by solo developers, indie hackers, startups, or AI-assisted developers
-
-Popularity alone is not enough.
+Individual documents are not.
 
 ---
 
-# Current Framework Decisions
+# Development Philosophy
 
-Supported:
+The goal is not:
 
-- VANILLA
-- REACT_VITE
-- ASTRO
-- NEXTJS
-- FASTAPI
+```text
+Find a better AI.
+```
 
-Planned:
+The goal is:
 
-- LARAVEL
+```text
+Create a better workflow.
+```
 
-Excluded:
+AI models will improve over time.
 
-- DJANGO
-- NUXT
-- SVELTEKIT
-- SPRING_BOOT
-- ASPNET_CORE
-
-Reasons vary, but usually involve:
-
-- low probability of actual usage
-- weak convention enforcement
-- architectural fragmentation
-- poor fit for AI-assisted development
+The workflow should survive model changes.
 
 ---
 
-# Framework Philosophy
+# Workflow
 
-Framework documents should contain:
+Current ReplWorks workflow:
 
+```text
+IDEAS.md
+↓
+PITCHING_SCRIPT.md
+↓
+PRODUCT_SPEC.md
+↓
+ARCHITECTURE.md
+↓
+FRAMEWORK.md
+↓
+REVIEW_IMPLEMENTATION_READINESS
+↓
+TASKS.md
+↓
+IMPLEMENTATION
+↓
+AI_MEMORY.md
+```
+
+This workflow is currently considered the core of ReplWorks.
+
+---
+
+# Document Responsibilities
+
+## IDEAS.md
+
+Purpose:
+
+```text
+Capture the validated product idea.
+```
+
+Rules:
+
+- Product idea only.
+- No implementation.
+- No architecture.
+- No technology choices.
+- No execution plan.
+
+---
+
+## PITCHING_SCRIPT.md
+
+Purpose:
+
+```text
+Persuade a specific audience.
+```
+
+Audience may be:
+
+- investors
+- VCs
+- government programs
+- partners
+- customers
+
+Expected numbers, assumptions and projections may be included.
+
+Unlike IDEAS.md.
+
+---
+
+## PRODUCT_SPEC.md
+
+Purpose:
+
+```text
+Define what the product is.
+```
+
+Contains:
+
+- product requirements
+- user-visible behavior
+- user flows
+- acceptance criteria
+
+Does not contain:
+
+- implementation
+- architecture
+- technologies
+
+Question answered:
+
+```text
+What are we building?
+```
+
+---
+
+## ARCHITECTURE.md
+
+Purpose:
+
+```text
+Define how the product works internally.
+```
+
+Contains:
+
+- responsibilities
+- flows
+- ownership boundaries
+- invariants
+
+Does not contain:
+
+- technologies
+- frameworks
+- libraries
+
+Question answered:
+
+```text
+How does the system work?
+```
+
+---
+
+## FRAMEWORK.md
+
+Purpose:
+
+```text
+Define implementation constraints.
+```
+
+Contains:
+
+- language
 - stack
-- versions
-- project structure
-- file placement rules
-- generation rules
-- constraints
+- coding conventions
+- implementation rules
 
-Do not split STACK and PROJECT_STRUCTURE into separate documents.
+Question answered:
 
-One framework document should contain all framework-related rules.
+```text
+How should it be built?
+```
+
+---
+
+## TASKS.md
+
+Purpose:
+
+```text
+Define what remains to be implemented.
+```
+
+Contains:
+
+- implementation milestones
+- acceptance criteria
+
+Does not contain:
+
+- architecture
+- implementation details
+
+Question answered:
+
+```text
+What should be built next?
+```
+
+---
+
+## AI_MEMORY.md
+
+Purpose:
+
+```text
+Preserve decision-making context.
+```
+
+Not project documentation.
+
+Not requirements.
+
+Not architecture.
+
+Used for context recovery in future sessions.
+
+---
+
+# Review Strategy
+
+The most important review step is:
+
+```text
+REVIEW_IMPLEMENTATION_READINESS
+```
+
+Purpose:
+
+```text
+Determine whether implementation can begin with confidence.
+```
+
+Inputs:
+
+- PRODUCT_SPEC.md
+- ARCHITECTURE.md
+- FRAMEWORK.md
+
+Expected reviewer:
+
+```text
+Execution AI
+```
 
 Examples:
 
-- REACT_VITE.md
-- NEXTJS.md
-- FASTAPI.md
+- Codex
+- implementation-focused agents
+
+Not discussion-oriented models.
 
 ---
 
-# Version Policy
+# Discussion AI vs Execution AI
 
-Version information is important.
-
-AI frequently assumes older versions.
-
-Framework documents should define current major versions.
-
-Project configuration remains the source of truth.
+## Discussion AI
 
 Examples:
 
-- package.json
-- pyproject.toml
+- ChatGPT
+- Claude
 
-If project configuration exists, follow it.
+Responsibilities:
 
-Otherwise follow framework specifications.
+- ideation
+- specifications
+- architecture
+- planning
+- workflows
 
----
+Question:
 
-# FastAPI Decision
-
-FastAPI should remain minimal.
-
-Do not introduce:
-
-- services
-- repositories
-- controllers
-
-unless explicitly requested.
-
-FastAPI is treated as an API framework.
-
-Not a full-stack framework.
+```text
+What should we build?
+```
 
 ---
 
-# Django Decision
+## Execution AI
 
-Django was intentionally excluded.
+Examples:
 
-Reasoning:
+- Codex
 
-- highly fragmented architecture styles
-- inconsistent project structures
-- heavy customization across teams
-- difficult for AI to predict correctly
+Responsibilities:
 
-The issue is not technical quality.
+- implementation review
+- implementation certainty
+- execution
 
-The issue is predictability.
+Question:
 
----
-
-# Long-Term Direction
-
-Future work may include:
-
-- additional framework specifications
-- specification generators
-- CLI tooling
-- project detection
-- framework composition
-
-Potential examples:
-
-- replworks detect
-- replworks generate
-- replworks validate
-
-Framework specifications may eventually be generated from project dependencies.
-
-Example:
-
-package.json
-→ detect stack
-→ generate FRAMEWORK.md
+```text
+Can this actually be built?
+```
 
 ---
 
-# Important Context
+# Key Insight
 
-When making decisions, prioritize:
+Many people combine multiple AI systems.
 
-1. AI predictability
-2. simplicity
-3. convention over flexibility
-4. real-world usage
-5. latest stable ecosystem
+The value does not come from using different models.
 
-Do not optimize for theoretical completeness.
+The value comes from separating:
 
-Do not optimize for enterprise requirements.
+```text
+Creation
+```
 
-Do not optimize for legacy projects.
+and
 
-Optimize for AI-assisted development.
+```text
+Validation
+```
+
+ReplWorks should preserve that separation.
+
+---
+
+# AI-Issuer Context
+
+AI-Issuer became an important test project.
+
+Purpose:
+
+```text
+Separate AI-generated issues from human-generated issues.
+```
+
+Important architectural decision:
+
+```text
+Author != Publisher
+```
+
+Reason:
+
+Publishing an AI-generated issue under a human account creates implicit ownership and responsibility.
+
+The project attempts to preserve the distinction between:
+
+```text
+Content Creation
+```
+
+and
+
+```text
+Content Publication
+```
+
+---
+
+# Current ReplWorks Positioning
+
+Previous positioning:
+
+```text
+Project Memory System for AI Development
+```
+
+Current positioning:
+
+```text
+AI-Native Product Development Workflow
+```
+
+Reason:
+
+Memory is only one step in the workflow.
+
+Workflow is the primary product.
+
+---
+
+# Future Direction
+
+ReplWorks should evolve toward:
+
+```text
+AI Product Development Methodology
+```
+
+Comparable in spirit to:
+
+- Waterfall
+- Agile
+- Scrum
+
+But designed specifically for AI-assisted software creation.
+
+The long-term goal is not better prompting.
+
+The long-term goal is:
+
+```text
+A repeatable system that transforms ideas into shipped products.
+```
