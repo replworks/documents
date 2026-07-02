@@ -1,4 +1,4 @@
-# NEXTJS.md
+# nextjs.md
 
 ## STACK
 

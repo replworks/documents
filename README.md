@@ -39,25 +39,30 @@ Instead of explaining how frameworks work, these documents define how projects s
 
 ```text
 .
-├── architecture.md
-├── tasks.md
 ├── AGENTS.md
 ├── AI_MEMORY.md
+├── .repl/
+│   ├── agent.md
+│   ├── architecture.md
+│   └── tasks.md
 │
-├── docs/
-│   ├── IDEAS.md
-│   └── PITCHING_SCRIPT.md
-│
-├── frameworks/
-│   ├── REACT_VITE.md
-│   ├── NEXTJS.md
-│   ├── LARAVEL.md
-│   └── ...
-│
-└── extensions/
-    ├── REACT_ROUTER.md
-    ├── I18NEXT.md
-    ├── ZUSTAND.md
+├── prompts/
+│   ├── AI_MEMORY_PROMPT.txt
+│   ├── ARCHITECTURE_PROMPT.txt
+│   ├── BLOG_PROMPT.txt
+│   ├── DEVELOPMENT_LOG_PROMPT.txt
+│   ├── FRAMEWORK_DISCOVERY.txt
+│   ├── FRAMEWORK_PROMPT.txt
+│   ├── IDEAS_PROMPT.txt
+│   ├── JOURNAL_PROMPT.txt
+│   ├── PITCHING_SCRIPT_PROMPT.txt
+│   ├── PRODUCT_SPEC_PROMPT.txt
+│   ├── REVIEW_IMPLEMENTATION_READINESS_PROMPT.txt
+│   └── TASKS_PROMPT.txt│
+└── frameworks/
+    ├── react-vite.md
+    ├── nextjs.md
+    ├── laravel.md
     └── ...
 ```
 
@@ -67,7 +72,7 @@ Instead of explaining how frameworks work, these documents define how projects s
 
 Defines repository-wide rules for AI agents.
 
-### FRAMEWORK Specifications
+### Framework Specifications
 
 Framework-specific conventions and constraints.
 
@@ -106,15 +111,15 @@ Long-term project memory preserved across future sessions.
 Choose a framework:
 
 ```text
-REACT_VITE.md
+react-vite.md
 ```
 
 Add required extensions:
 
 ```text
-REACT_ROUTER.md
-I18NEXT.md
-LUCIDE_REACT.md
+react-router.md
+i18next.md
+lucide-react.md
 ```
 
 Generate:
@@ -126,7 +131,7 @@ framework.md
 Use with:
 
 ```text
-AGENTS.md
+agent.md
 architecture.md
 tasks.md
 ```

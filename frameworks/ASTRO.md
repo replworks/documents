@@ -1,4 +1,4 @@
-# ASTRO.md
+# astro.md
 
 ## STACK
 
