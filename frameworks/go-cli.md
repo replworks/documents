@@ -1,4 +1,4 @@
-# framework.md
+# go-cli.md
 
 # AI Issue Publisher Framework
 

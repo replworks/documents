@@ -1,4 +1,4 @@
-# REACT_VITE.md
+# react-vite.md
 
 ## STACK
 

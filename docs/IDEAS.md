@@ -1,4 +1,4 @@
-# IDEAS.md
+# ideas.md
 
 # ReplWorks Documents
 

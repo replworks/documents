@@ -1,4 +1,4 @@
-# VANILLA.md
+# vanilla.md
 
 ## STACK
 
