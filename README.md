@@ -39,8 +39,8 @@ Instead of explaining how frameworks work, these documents define how projects s
 
 ```text
 .
-├── ARCHITECTURE.md
-├── TASKS.md
+├── architecture.md
+├── tasks.md
 ├── AGENTS.md
 ├── AI_MEMORY.md
 │
@@ -89,11 +89,11 @@ Examples:
 - Zustand
 - TanStack Query
 
-### ARCHITECTURE.md
+### architecture.md
 
 Project-specific architecture decisions.
 
-### TASKS.md
+### tasks.md
 
 Current project status and roadmap.
 
@@ -120,15 +120,15 @@ LUCIDE_REACT.md
 Generate:
 
 ```text
-FRAMEWORK.md
+framework.md
 ```
 
 Use with:
 
 ```text
 AGENTS.md
-ARCHITECTURE.md
-TASKS.md
+architecture.md
+tasks.md
 ```
 
 The AI agent now has deterministic implementation rules instead of making assumptions.
@@ -163,7 +163,7 @@ AI agents frequently assume incorrect versions when versions are not explicitly 
 
 Framework specifications should be reusable across many projects.
 
-Project-specific decisions belong in ARCHITECTURE.md.
+Project-specific decisions belong in architecture.md.
 
 ## Validation
 

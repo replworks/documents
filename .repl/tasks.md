@@ -1,10 +1,10 @@
-# TASKS.md
+# tasks.md
 
 ## CURRENT_GOAL
 
 Build a reusable AI-first documentation system for software projects.
 
-The system should allow developers to compose FRAMEWORK.md from framework specifications and package extensions.
+The system should allow developers to compose framework.md from framework specifications and package extensions.
 
 ---
 
@@ -22,9 +22,9 @@ The system should allow developers to compose FRAMEWORK.md from framework specif
 - [x] AGENTS.md
 - [x] IDEAS.md
 - [x] PITCHING_SCRIPT.md
-- [ ] ARCHITECTURE.md
+- [ ] architecture.md
 - [ ] AI_MEMORY.md
-- [ ] TASKS.md refinement
+- [ ] tasks.md refinement
 
 ---
 
@@ -103,7 +103,7 @@ The system should allow developers to compose FRAMEWORK.md from framework specif
 
 ### Framework Assembly
 
-- [ ] Design FRAMEWORK.md generation flow
+- [ ] Design framework.md generation flow
 - [ ] Design extension loading flow
 - [ ] Design merge strategy
 - [ ] Design override strategy
@@ -128,7 +128,7 @@ The system should allow developers to compose FRAMEWORK.md from framework specif
 
 ### Generation
 
-- [ ] Generate FRAMEWORK.md
+- [ ] Generate framework.md
 - [ ] Generate project documents
 - [ ] Update existing documents
 
@@ -169,7 +169,7 @@ The system should allow developers to compose FRAMEWORK.md from framework specif
 
 - [ ] Auto-detect framework
 - [ ] Auto-detect packages
-- [ ] Auto-generate FRAMEWORK.md
+- [ ] Auto-generate framework.md
 
 ### AI Integration
 
@@ -183,7 +183,7 @@ The system should allow developers to compose FRAMEWORK.md from framework specif
 
 - [ ] Framework specifications are reusable
 - [ ] Extension specifications are composable
-- [ ] FRAMEWORK.md can be generated automatically
+- [ ] framework.md can be generated automatically
 - [ ] AI implementation consistency improves
 - [ ] AI architectural drift decreases
 - [ ] AI guesswork is minimized

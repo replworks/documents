@@ -1,5 +1,3 @@
-# Ideas Prompt
-
 Generate IDEAS.md from this conversation.
 
 This document is intended for human consumption.

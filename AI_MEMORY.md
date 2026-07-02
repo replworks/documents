@@ -62,7 +62,7 @@ The most valuable asset is not:
 
 - AI_MEMORY.md
 - AGENTS.md
-- FRAMEWORK.md
+- framework.md
 
 The most valuable asset is:
 
@@ -109,15 +109,15 @@ IDEAS.md
 ↓
 PITCHING_SCRIPT.md
 ↓
-PRODUCT_SPEC.md
+product.md
 ↓
-ARCHITECTURE.md
+architecture.md
 ↓
-FRAMEWORK.md
+framework.md
 ↓
 REVIEW_IMPLEMENTATION_READINESS
 ↓
-TASKS.md
+tasks.md
 ↓
 IMPLEMENTATION
 ↓
@@ -170,7 +170,7 @@ Unlike IDEAS.md.
 
 ---
 
-## PRODUCT_SPEC.md
+## product.md
 
 Purpose:
 
@@ -199,7 +199,7 @@ What are we building?
 
 ---
 
-## ARCHITECTURE.md
+## architecture.md
 
 Purpose:
 
@@ -228,7 +228,7 @@ How does the system work?
 
 ---
 
-## FRAMEWORK.md
+## framework.md
 
 Purpose:
 
@@ -251,7 +251,7 @@ How should it be built?
 
 ---
 
-## TASKS.md
+## tasks.md
 
 Purpose:
 
@@ -311,9 +311,9 @@ Determine whether implementation can begin with confidence.
 
 Inputs:
 
-- PRODUCT_SPEC.md
-- ARCHITECTURE.md
-- FRAMEWORK.md
+- product.md
+- architecture.md
+- framework.md
 
 Expected reviewer:
 

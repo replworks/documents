@@ -1,10 +1,8 @@
-# ARCHITECTURE_PROMPT.md
+Generate architecture.md.
 
-Generate ARCHITECTURE.md.
+Assume product.md already exists and is correct.
 
-Assume PRODUCT_SPEC.md already exists and is correct.
-
-The purpose of ARCHITECTURE.md is to define:
+The purpose of architecture.md is to define:
 
 ```text
 How the product works internally.

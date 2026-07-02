@@ -80,8 +80,8 @@ PROJECT DOCUMENTS
 
 Examples:
 
-- ARCHITECTURE.md
-- TASKS.md
+- architecture.md
+- tasks.md
 
 Purpose:
 

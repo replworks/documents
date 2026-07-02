@@ -1,4 +1,4 @@
-# FRAMEWORK.md
+# framework.md
 
 # AI Issue Publisher Framework
 
@@ -6,9 +6,9 @@
 
 This document defines implementation constraints.
 
-PRODUCT_SPEC.md defines what must be built.
+product.md defines what must be built.
 
-FRAMEWORK.md defines how it must be built.
+framework.md defines how it must be built.
 
 Implementations must follow this document exactly.
 

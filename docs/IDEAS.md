@@ -117,22 +117,22 @@ AI는 추측하지 않는다.
 
 ```text
 AGENTS.md
-ARCHITECTURE.md
-TASKS.md
+architecture.md
+tasks.md
 AI_MEMORY.md
 
-FRAMEWORK.md
+framework.md
 ```
 
 ### AGENTS.md
 
 AI 에이전트의 행동 규칙
 
-### ARCHITECTURE.md
+### architecture.md
 
 시스템 구조 및 설계
 
-### TASKS.md
+### tasks.md
 
 현재 작업 목록
 
@@ -140,7 +140,7 @@ AI 에이전트의 행동 규칙
 
 제품 비전 및 장기 컨텍스트
 
-### FRAMEWORK.md
+### framework.md
 
 현재 프로젝트의 기술 스택 및 개발 규칙
 

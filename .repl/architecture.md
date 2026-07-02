@@ -1,4 +1,4 @@
-# ARCHITECTURE.md
+# architecture.md
 
 ## PURPOSE
 
@@ -13,15 +13,15 @@ DEFINE_DOCUMENT_RELATIONSHIPS
 ## PROJECT_DOCUMENTS
 
 ```text
-ARCHITECTURE.md
-FRAMEWORK.md
-TASKS.md
+architecture.md
+framework.md
+tasks.md
 AGENTS.md
 ```
 
 ---
 
-## ARCHITECTURE.md
+## architecture.md
 
 PURPOSE
 
@@ -45,7 +45,7 @@ HOW_IS_THE_PROJECT_STRUCTURED
 
 ---
 
-## FRAMEWORK.md
+## framework.md
 
 PURPOSE
 
@@ -68,7 +68,7 @@ HOW_SHOULD_THE_PROJECT_BE_IMPLEMENTED
 
 ---
 
-## TASKS.md
+## tasks.md
 
 PURPOSE
 
@@ -158,7 +158,7 @@ DEFINES_AGENT_BEHAVIOR
 ```text
 frameworks/REACT_VITE.md
                 ↓
-project/FRAMEWORK.md
+project/framework.md
 ```
 
 FRAMEWORK_TEMPLATES_ARE_REUSABLE

@@ -1,5 +1,3 @@
-# Pitching Script Prompt
-
 Generate PITCHING_SCRIPT.md from:
 
 - IDEAS.md

@@ -68,9 +68,9 @@ ReplWorks Documents는 이 문제를 해결하기 위해 만들어졌습니다.
 
 ```text
 AGENTS.md
-FRAMEWORK.md
-ARCHITECTURE.md
-TASKS.md
+framework.md
+architecture.md
+tasks.md
 AI_MEMORY.md
 ```
 
@@ -82,7 +82,7 @@ AI를 위한 문서입니다.
 
 예를 들어 React/Vite 프로젝트라면
 
-FRAMEWORK.md 안에 다음과 같은 규칙이 들어갑니다.
+framework.md 안에 다음과 같은 규칙이 들어갑니다.
 
 - React 19
 - Vite

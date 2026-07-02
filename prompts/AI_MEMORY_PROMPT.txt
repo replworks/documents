@@ -1,5 +1,3 @@
-# AI Memory Prompt
-
 Generate AI_MEMORY.md from this conversation.
 
 Preserve decision-making context.
