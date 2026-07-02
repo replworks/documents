@@ -1,4 +1,4 @@
-# AI_MEMORY.md
+# ai-memory.md
 
 # ReplWorks Memory
 
