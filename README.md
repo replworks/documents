@@ -1,5 +1,10 @@
 # REPLWorks Documents
 
+> [!WARNING]
+> **이 레포지토리는 더 이상 업데이트되지 않습니다 (Archived).**  
+> 최신 프롬프트, 템플릿 및 문서는 [replworks.github.io](https://github.com/replworks/replworks.github.io) 저장소로 통합되었습니다.  
+> 👉 **[새 저장소(replworks.github.io) 바로가기](https://github.com/replworks/replworks.github.io)**
+
 **AI가 구현하기 전에, 프로젝트를 먼저 정의하는 문서 체계.**
 
 > **AI should not guess.**
