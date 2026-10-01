@@ -43,23 +43,21 @@ IF_REQUIREMENT_IS_UNDEFINED_ASK_BEFORE_IMPLEMENTING
 .
 ├── AGENTS.md        # 이 저장소를 관리하는 AI agent의 규칙
 ├── CHANGELOG.md     # 규칙 변경 기록
-├── tech-stacks/     # 재사용 가능한 tech stack specification
+├── tech-stacks/     # 프레임워크별 TECH_STACK.md 템플릿
 ├── prompts/         # 문서를 만들고 검증하는 프롬프트
 ├── docs/            # 보조 자료와 기록 (source of truth 아님)
 └── package.json     # 문서 검증 도구 (Markdownlint, Prettier, Husky)
 ```
 
-| 경로           | 역할                                                                    |
-| -------------- | ----------------------------------------------------------------------- |
-| `AGENTS.md`    | 저장소의 목적, 문서 작성 원칙, specification 관리 방법                  |
-| `tech-stacks/` | 특정 프로젝트에 종속되지 않고 여러 프로젝트에서 반복 사용하는 기술 규칙 |
-| `prompts/`     | specification 자체가 아니라, specification을 만들고 검증하는 도구       |
-| `docs/`        | 작성 과정에서 생긴 보조 기록                                            |
+- `AGENTS.md`: 저장소의 목적, 문서 작성 원칙, specification 관리 방법
+- `tech-stacks/`: 프레임워크별로 미리 작성한, 여러 프로젝트에서 재사용할 수 있는 `TECH_STACK.md` 템플릿
+- `prompts/`: specification 자체가 아니라, specification을 만들고 검증하는 도구
+- `docs/`: 작성 과정에서 생긴 보조 기록
 
 ## 사용 방법
 
 1. `prompts/`의 프롬프트로 AI와 함께 프로젝트 문서(요구사항, 기술 스택, 아키텍처, 작업 계획)를 정의합니다.
-2. 프로젝트가 쓰는 기술에 맞는 `tech-stacks/`의 specification을 프로젝트에 가져옵니다.
+2. 프로젝트가 쓰는 프레임워크에 맞는 `tech-stacks/`의 `TECH_STACK.md` 템플릿을 프로젝트에 가져와 구체화합니다.
 3. 구현 에이전트에게 문서를 전달합니다. 문서에 없는 내용은 에이전트가 질문하거나 멈춥니다.
 4. 진행 중 발견한 AI의 실수와 문서의 빈틈을 이 저장소로 되돌려 반영합니다.
 
