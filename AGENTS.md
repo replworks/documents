@@ -3,8 +3,8 @@
 ## DOCUMENT_ORDER
 
 1. AGENTS.md
-2. ./replworks/ARCHITECTURE.md
-3. ./replworks/TASKS.md
+2. .replworks/ARCHITECTURE.md
+3. .replworks/TASKS.md
    Only these documents are authoritative.
 
 ---
