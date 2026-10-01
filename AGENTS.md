@@ -105,17 +105,15 @@ ARCHITECTURE.md
 
 For every task:
 
-1. Read PRODUCT_SPEC.md
-2. Read TECH_STACK.md
-3. Read ARCHITECTURE.md
-4. Read task definition
-5. If the task touches a domain not covered by verified knowledge in PRODUCT_SPEC.md or ARCHITECTURE.md: stop. Mark the relevant section UNVERIFIED. Do not implement against an UNVERIFIED section. Require explicit human confirmation before continuing.
-6. Implement
-7. Write unit tests for internal logic
-8. If the task touches an EXTERNAL_BOUNDARY: write an E2E test against the live boundary. A mocked test alone does not satisfy this step.
-9. Run all tests
-10. Stop
-    Do not start another task automatically.
+1. Read ARCHITECTURE.md
+2. Read TASKS.md definition
+3. If the task touches a domain not covered by verified knowledge in ARCHITECTURE.md: stop. Mark the relevant section UNVERIFIED. Do not implement against an UNVERIFIED section. Require explicit human confirmation before continuing.
+4. Implement
+5. Write unit tests for internal logic
+6. If the task touches an EXTERNAL_BOUNDARY: write an E2E test against the live boundary. A mocked test alone does not satisfy this step.
+7. Run all tests
+8. Stop
+   Do not start another task automatically.
 
 ---
 
