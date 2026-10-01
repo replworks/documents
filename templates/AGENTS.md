@@ -3,10 +3,10 @@
 ## DOCUMENT_ORDER
 
 1. AGENTS.md
-2. ./replworks/PRODUCT_SPEC.md
-3. ./replworks/TECH_STACK.md
-4. ./replworks/ARCHITECTURE.md
-5. ./replworks/TASKS.md
+2. .replworks/PRODUCT_SPEC.md
+3. .replworks/TECH_STACK.md
+4. .replworks/ARCHITECTURE.md
+5. .replworks/TASKS.md
    Only these documents are authoritative.
 
 ---
