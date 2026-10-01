@@ -1,244 +1,263 @@
 # AGENTS.md
 
-## ROLE
+## DOCUMENT_ORDER
 
-You are a documentation engineering agent.
-
-Your responsibility is to create, maintain, and improve AI-facing project documents.
-
-This repository does not contain application code.
-
-This repository contains reusable specifications, templates, and conventions.
-
----
-
-## REPOSITORY_PURPOSE
-
-The purpose of this repository is to provide reusable project documentation for AI-assisted software development.
-
-Documents must optimize for:
-
-- AI comprehension
-- AI consistency
-- AI implementation accuracy
-- Long-term maintainability
-
-Documents are written for AI agents.
-
-Humans are secondary readers.
+1. AGENTS.md
+2. PRODUCT_SPEC.md
+3. TECH_STACK.md
+4. ARCHITECTURE.md
+5. TASKS.md
+   Only these documents are authoritative.
 
 ---
 
-## PRIMARY_GOAL
+## IGNORE
 
-Reduce AI guesswork.
+Ignore all files under:
 
-Reduce architectural drift.
+```text
+docs/
+```
 
-Reduce implementation inconsistency.
-
-Increase deterministic project generation.
+Never use files in docs/ as requirements.
+Never implement features described only in docs/.
 
 ---
 
-## DOCUMENT_TYPES
+## SOURCE_OF_TRUTH
 
-FRAMEWORK DOCUMENTS
+Product Requirements:
 
+```text
+PRODUCT_SPEC.md
+```
+
+Implementation Constraints:
+
+```text
+TECH_STACK.md
+```
+
+Architecture:
+
+```text
+ARCHITECTURE.md
+```
+
+Execution Plan:
+
+```text
+TASKS.md
+```
+
+If a conflict exists:
+
+```text
+PRODUCT_SPEC.md
+>
+TECH_STACK.md
+>
+ARCHITECTURE.md
+>
+TASKS.md
+>
+everything else
+```
+
+---
+
+## DOCUMENT_RESPONSIBILITIES
+
+PRODUCT_SPEC.md defines:
+
+```text
+What the product is.
+What the product does.
+```
+
+TECH_STACK.md defines:
+
+```text
+How the product must be implemented.
+```
+
+ARCHITECTURE.md defines:
+
+```text
+How the product works.
+```
+
+TASKS.md defines:
+
+```text
+What should be implemented next.
+```
+
+Do not move responsibilities between documents.
+
+---
+
+## EXTERNAL_BOUNDARY
+
+Define once. Referenced by TASK_EXECUTION and MOCK_RULES below.
+
+```text
+External boundary = any behavior not controlled by this codebase.
 Examples:
-
-- REACT_VITE.md
-- NEXTJS.md
-- LARAVEL.md
-- FASTAPI.md
-
-Purpose:
-
-Define framework-specific constraints and conventions.
+third-party DOM
+third-party API
+browser runtime behavior
+```
 
 ---
 
-EXTENSION DOCUMENTS
+## IMPLEMENTATION_RULES
 
-Examples:
+Implement only the selected task.
+Do not implement:
 
-- REACT_ROUTER.md
-- I18NEXT.md
-- ZUSTAND.md
+```text
+future work
+roadmap items
+optional features
+assumptions
+inferred requirements
+```
 
-Purpose:
+Requirements must originate from:
 
-Define package-specific constraints and conventions.
+```text
+PRODUCT_SPEC.md
+```
 
-Extensions augment framework documents.
+Implementation must follow:
 
-Extensions must not duplicate framework rules.
-
----
-
-PROJECT DOCUMENTS
-
-Examples:
-
-- architecture.md
-- tasks.md
-
-Purpose:
-
-Define project-specific information.
-
-These documents belong in application repositories.
+```text
+TECH_STACK.md
+ARCHITECTURE.md
+```
 
 ---
 
-## SPECIFICATION_PHILOSOPHY
+## TASK_EXECUTION
 
-Prefer constraints over explanations.
+For every task:
 
-Prefer rules over recommendations.
-
-Prefer deterministic behavior over flexibility.
-
-Prefer consistency over completeness.
-
-Avoid educational content.
-
-Avoid tutorials.
-
-Avoid marketing language.
-
-Avoid human-oriented prose.
+1. Read PRODUCT_SPEC.md
+2. Read TECH_STACK.md
+3. Read ARCHITECTURE.md
+4. Read task definition
+5. If the task touches a domain not covered by verified knowledge in PRODUCT_SPEC.md or ARCHITECTURE.md: stop. Mark the relevant section UNVERIFIED. Do not implement against an UNVERIFIED section. Require explicit human confirmation before continuing.
+6. Implement
+7. Write unit tests for internal logic
+8. If the task touches an EXTERNAL_BOUNDARY: write an E2E test against the live boundary. A mocked test alone does not satisfy this step.
+9. Run all tests
+10. Stop
+    Do not start another task automatically.
 
 ---
 
-## WRITING_RULES
+## MOCK_RULES
 
-Write for implementation agents.
+Mock only observed behavior.
 
-Assume documents are machine-consumed.
+```text
+Allowed sources:
+recorded live response
+documented spec
+```
 
-Use short directives.
+```text
+Forbidden sources:
+assumed behavior
+guessed response
+inferred event flow
+```
 
-Use explicit constraints.
-
-Use uppercase directives when appropriate.
-
-Examples:
-
-GOOD
-
-USE_FUNCTION_COMPONENTS_ONLY
-
-DO_NOT_CREATE_NEW_TOP_LEVEL_DIRECTORIES
-
-PACKAGE_JSON_IS_SOURCE_OF_TRUTH
-
-BAD
-
-"Developers should generally consider..."
-
-"It is recommended that..."
-
-"You may want to..."
+If a mock's values cannot be traced to a recorded observation or a spec, do not write it.
+Any code touching an EXTERNAL_BOUNDARY requires at least one live observation before it may be mocked.
+Re-verify mocks when the external system's behavior may have changed.
 
 ---
 
-## FRAMEWORK_DOCUMENT_RULES
+## PRODUCT_CHANGES
 
-Framework documents should define:
+If implementation reveals missing product requirements, or a PRODUCT_SPEC.md section is marked UNVERIFIED:
 
-- stack
-- versions
-- structure
-- file placement
-- naming conventions
-- generation policies
+```text
+Stop.
+Do not invent requirements.
+```
 
-Framework documents should not define:
-
-- project-specific business rules
-- project-specific architecture
-- project-specific content
-
-Framework documents must remain reusable.
+Update PRODUCT_SPEC.md, and clear the UNVERIFIED mark only after human confirmation, before implementation continues.
 
 ---
 
-## EXTENSION_DOCUMENT_RULES
+## TECH_STACK_CHANGES
 
-Extensions should be package-oriented.
+If implementation requires framework changes:
 
-Examples:
-
-- React Router
-- i18next
-- Zustand
-- TanStack Query
-
-Extensions should activate additional constraints.
-
-Extensions should not redefine framework behavior.
+1. Update TECH_STACK.md
+2. Update implementation
+   Never allow framework and code to diverge.
 
 ---
 
-## VERSION_POLICY
+## ARCHITECTURE_CHANGES
 
-Always specify versions when known.
+If implementation requires architecture changes, or an ARCHITECTURE.md section is marked UNVERIFIED:
 
-AI agents frequently assume incorrect versions.
-
-Version ambiguity is a specification failure.
-
-When versions differ:
-
-package.json is source of truth.
+1. Update ARCHITECTURE.md
+2. Clear the UNVERIFIED mark only after human confirmation
+3. Update implementation
+   Never allow architecture and code to diverge.
 
 ---
 
-## AI_OPTIMIZATION_RULES
+## TASK_CHANGES
 
-Documents should minimize ambiguity.
-
-Documents should minimize interpretation.
-
-Documents should minimize assumptions.
-
-Every rule should answer:
-
-"What should an implementation agent do?"
-
-If a rule does not influence implementation behavior, consider removing it.
+If implementation invalidates a task:
+Update TASKS.md.
 
 ---
 
-## EVOLUTION_POLICY
+## DESIGN_RULES
 
-Specifications are living documents.
+Prefer:
 
-Improve specifications when recurring AI mistakes are discovered.
+```text
+simple
+explicit
+minimal
+```
 
-New rules should emerge from real implementation failures.
+Avoid:
 
-Avoid speculative rules.
+```text
+abstraction without use
+premature optimization
+speculative features
+```
 
-Prefer observed failures over theoretical concerns.
+---
+
+## FILE_CREATION
+
+Do not create new top-level documents unless explicitly requested.
+Prefer modifying existing files.
 
 ---
 
 ## SUCCESS_CRITERIA
 
-A successful specification:
+Task is complete only when:
 
-- prevents common AI mistakes
-- reduces architectural invention
-- reduces unnecessary file creation
-- improves implementation consistency
-- remains reusable across projects
-
----
-
-## CORE_PRINCIPLE
-
-AI should not guess.
-
-Specifications exist to eliminate guessing.
+- product requirements satisfied
+- architectural requirements satisfied
+- framework constraints satisfied
+- acceptance criteria satisfied
+- no UNVERIFIED sections remain in scope for this task
+- code runs
+- unit tests pass
+- E2E tests pass for any EXTERNAL_BOUNDARY code touched
+  Then stop.

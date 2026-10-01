@@ -1,4 +1,4 @@
-# pitching-script.md
+# PITCHING_SCRIPT.md
 
 # ReplWorks Documents
 

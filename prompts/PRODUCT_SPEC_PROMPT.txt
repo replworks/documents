@@ -1,8 +1,8 @@
-Generate product.md.
+Generate PRODUCT_SPEC.md.
 
 Assume all product discovery and idea validation are already complete.
 
-The purpose of product.md is to define:
+The purpose of PRODUCT_SPEC.md is to define:
 
 ```text
 What the product is.

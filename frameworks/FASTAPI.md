@@ -1,4 +1,4 @@
-# fastapi.md
+# FASTAPI.md
 
 ## STACK
 

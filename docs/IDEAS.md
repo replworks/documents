@@ -1,4 +1,4 @@
-# ideas.md
+# IDEAS.md
 
 # ReplWorks Documents
 
@@ -65,7 +65,7 @@ AI는 일반적인 개발 지식보다 현재 프로젝트의 규칙을 더 필�
 
 ---
 
-### 2. Framework First
+### 2. Tech Stack First
 
 프로젝트마다 사용하는 기술 스택은 다르다.
 
@@ -117,32 +117,36 @@ AI는 추측하지 않는다.
 
 ```text
 AGENTS.md
-architecture.md
-tasks.md
+PRODUCT_SPEC.md
+TECH_STACK.md
+ARCHITECTURE.md
+TASKS.md
 AI_MEMORY.md
-
-framework.md
 ```
 
 ### AGENTS.md
 
 AI 에이전트의 행동 규칙
 
-### architecture.md
+### PRODUCT_SPEC.md
+
+현재 프로젝트가 무엇이고, 무엇을 하는가.
+
+### TECH_STACK.md
+
+현재 프로젝트의 기술 스택 및 개발 규칙
+
+### ARCHITECTURE.md
 
 시스템 구조 및 설계
 
-### tasks.md
+### TASKS.md
 
 현재 작업 목록
 
 ### AI_MEMORY.md
 
 제품 비전 및 장기 컨텍스트
-
-### framework.md
-
-현재 프로젝트의 기술 스택 및 개발 규칙
 
 ---
 
