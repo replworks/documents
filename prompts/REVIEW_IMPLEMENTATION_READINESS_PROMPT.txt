@@ -1,8 +1,8 @@
 Review the following documents together:
 
-- product.md
-- architecture.md
-- framework.md
+- PRODUCT_SPEC.md
+- TECH_STACK.md
+- ARCHITECTURE.md
 
 Assume you are responsible for implementing the entire product.
 

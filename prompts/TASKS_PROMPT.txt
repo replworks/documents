@@ -1,18 +1,18 @@
-Generate tasks.md.
+Generate TASKS.md.
 
-Assume product.md exists.
+Assume PRODUCT_SPEC.md exists.
 
-Assume architecture.md exists.
+Assume ARCHITECTURE.md exists.
 
-Assume framework.md exists.
+Assume TECH_STACK.md exists.
 
-The purpose of tasks.md is to define:
+The purpose of TASKS.md is to define:
 
 ```text
 What remains to be implemented.
 ```
 
-tasks.md is an execution checklist.
+TASKS.md is an execution checklist.
 
 Do not describe architecture.
 

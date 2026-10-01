@@ -1,10 +1,10 @@
-Generate framework.md.
+Generate TECH_STACK.md.
 
-Assume product.md and architecture.md already exist and are correct.
+Assume PRODUCT.md and architecture.md already exist and are correct.
 
-The purpose of framework.md is to eliminate implementation ambiguity.
+The purpose of TECH_STACK.md is to eliminate implementation ambiguity.
 
-framework.md defines implementation constraints only.
+TECH_STACK.md defines implementation constraints only.
 
 Do not infer undecided technologies.
 

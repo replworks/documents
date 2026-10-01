@@ -4,8 +4,8 @@
 
 1. AGENTS.md
 2. PRODUCT_SPEC.md
-3. ARCHITECTURE.md
-4. FRAMEWORK.md
+3. FRAMEWORK.md
+4. ARCHITECTURE.md
 5. TASKS.md
    Only these documents are authoritative.
 
@@ -32,16 +32,16 @@ Product Requirements:
 PRODUCT_SPEC.md
 ```
 
-Architecture:
-
-```text
-ARCHITECTURE.md
-```
-
 Implementation Constraints:
 
 ```text
 FRAMEWORK.md
+```
+
+Architecture:
+
+```text
+ARCHITECTURE.md
 ```
 
 Execution Plan:
@@ -55,9 +55,9 @@ If a conflict exists:
 ```text
 PRODUCT_SPEC.md
 >
-ARCHITECTURE.md
->
 FRAMEWORK.md
+>
+ARCHITECTURE.md
 >
 TASKS.md
 >
@@ -75,16 +75,16 @@ What the product is.
 What the product does.
 ```
 
-ARCHITECTURE.md defines:
-
-```text
-How the product works.
-```
-
 FRAMEWORK.md defines:
 
 ```text
 How the product must be implemented.
+```
+
+ARCHITECTURE.md defines:
+
+```text
+How the product works.
 ```
 
 TASKS.md defines:
@@ -133,8 +133,8 @@ PRODUCT_SPEC.md
 Implementation must follow:
 
 ```text
-ARCHITECTURE.md
 FRAMEWORK.md
+ARCHITECTURE.md
 ```
 
 ---
@@ -144,8 +144,8 @@ FRAMEWORK.md
 For every task:
 
 1. Read PRODUCT_SPEC.md
-2. Read ARCHITECTURE.md
-3. Read FRAMEWORK.md
+2. Read FRAMEWORK.md
+3. Read ARCHITECTURE.md
 4. Read task definition
 5. If the task touches a domain not covered by verified knowledge in PRODUCT_SPEC.md or ARCHITECTURE.md: stop. Mark the relevant section UNVERIFIED. Do not implement against an UNVERIFIED section. Require explicit human confirmation before continuing.
 6. Implement
@@ -193,6 +193,16 @@ Update PRODUCT_SPEC.md, and clear the UNVERIFIED mark only after human confirmat
 
 ---
 
+## TECH_STACK_CHANGES
+
+If implementation requires framework changes:
+
+1. Update TECH_STACK.md
+2. Update implementation
+   Never allow framework and code to diverge.
+
+---
+
 ## ARCHITECTURE_CHANGES
 
 If implementation requires architecture changes, or an ARCHITECTURE.md section is marked UNVERIFIED:
@@ -201,16 +211,6 @@ If implementation requires architecture changes, or an ARCHITECTURE.md section i
 2. Clear the UNVERIFIED mark only after human confirmation
 3. Update implementation
    Never allow architecture and code to diverge.
-
----
-
-## FRAMEWORK_CHANGES
-
-If implementation requires framework changes:
-
-1. Update FRAMEWORK.md
-2. Update implementation
-   Never allow framework and code to diverge.
 
 ---
 
