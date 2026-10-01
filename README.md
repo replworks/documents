@@ -1,217 +1,260 @@
 # ReplWorks Documents
 
-AI-first project specifications for consistent software development.
+AI가 소프트웨어를 구현할 때 **추측하지 않도록 만드는 프로젝트 문서 표준**입니다.
 
-## Why?
+ReplWorks Documents는 AI 코딩 에이전트가 프로젝트의 요구사항, 기술 스택, 아키텍처, 작업 범위를 임의로 해석하지 않도록 프로젝트의 핵심 정보를 명확한 문서로 정의합니다.
 
-Modern AI coding agents are excellent at writing code but often struggle with project consistency.
+핵심 원칙은 간단합니다.
 
-Without clear constraints, AI agents tend to:
+> **AI should not guess.**
 
-- invent new folder structures
-- create unnecessary files
-- introduce inconsistent patterns
-- assume incorrect framework versions
-- drift away from established architecture
+필요한 정보가 문서에 정의되어 있지 않다면 AI가 임의로 결정하는 것이 아니라, 구현을 멈추고 확인해야 합니다.
 
-ReplWorks Documents provides reusable specifications that reduce guesswork and improve implementation consistency.
+## 왜 필요한가?
 
-The goal is simple:
+AI 코딩 에이전트는 코드를 빠르게 작성할 수 있지만, 프로젝트에 이미 존재하는 규칙과 의도를 항상 정확하게 이해하는 것은 아닙니다.
 
-> AI should not guess.
+문서에 충분한 제약이 없다면 AI는 다음과 같은 결정을 스스로 만들어낼 수 있습니다.
 
-## Philosophy
+- 존재하지 않는 요구사항을 추론합니다.
+- 새로운 디렉터리나 파일을 임의로 만듭니다.
+- 기존 아키텍처와 다른 구조를 선택합니다.
+- 사용하지 않기로 한 기술이나 라이브러리를 추가합니다.
+- 동일한 기능을 다른 방식으로 다시 구현합니다.
+- 정의되지 않은 외부 시스템의 동작을 추측합니다.
+- 아직 구현하지 않기로 한 기능까지 미리 구현합니다.
 
-Traditional documentation is written for humans.
+ReplWorks Documents의 목적은 AI의 판단을 없애는 것이 아닙니다.
 
-ReplWorks Documents is primarily written for AI agents.
+**AI가 판단해도 되는 영역과 판단해서는 안 되는 영역을 문서로 구분하는 것**입니다.
 
-Specifications focus on:
+## 핵심 문서
 
-- constraints
-- conventions
-- structure
-- deterministic behavior
-
-Instead of explaining how frameworks work, these documents define how projects should be implemented.
-
-## Repository Structure
+하나의 프로젝트는 다음 다섯 가지 문서로 정의됩니다.
 
 ```text
-.
-├── AGENTS.md
-├── AI_MEMORY.md
-├── .repl/
-│   ├── agent.md
-│   ├── architecture.md
-│   └── tasks.md
-│
-├── prompts/
-│   ├── AI_MEMORY_PROMPT.txt
-│   ├── ARCHITECTURE_PROMPT.txt
-│   ├── BLOG_PROMPT.txt
-│   ├── DEVELOPMENT_LOG_PROMPT.txt
-│   ├── FRAMEWORK_DISCOVERY.txt
-│   ├── FRAMEWORK_PROMPT.txt
-│   ├── IDEAS_PROMPT.txt
-│   ├── JOURNAL_PROMPT.txt
-│   ├── PITCHING_SCRIPT_PROMPT.txt
-│   ├── PRODUCT_SPEC_PROMPT.txt
-│   ├── REVIEW_IMPLEMENTATION_READINESS_PROMPT.txt
-│   └── TASKS_PROMPT.txt│
-└── frameworks/
-    ├── react-vite.md
-    ├── nextjs.md
-    ├── laravel.md
-    └── ...
+AGENTS.md
+PRODUCT_SPEC.md
+TECH_STACK.md
+ARCHITECTURE.md
+TASKS.md
 ```
 
-## Core Documents
+각 문서는 서로 다른 책임을 가집니다.
 
 ### AGENTS.md
 
-Defines repository-wide rules for AI agents.
+AI 에이전트가 프로젝트 문서를 어떻게 읽고, 어떤 순서로 판단하고, 언제 구현을 중단해야 하는지를 정의합니다.
 
-### Framework Specifications
+또한 문서 간 우선순위와 구현 과정에서 지켜야 할 공통 규칙을 정의합니다.
 
-Framework-specific conventions and constraints.
+### PRODUCT_SPEC.md
 
-Examples:
+**제품이 무엇이며 무엇을 해야 하는지** 정의합니다.
 
-- React + Vite
-- Next.js
-- Laravel
-- FastAPI
+제품의 목적, 사용자, 기능, 동작, 입력과 출력, 제약사항 등 제품의 요구사항을 기록합니다.
 
-### Extension Specifications
+제품이 해야 할 일을 AI가 추측하지 않도록 하는 문서입니다.
 
-Package-specific rules that augment framework specifications.
+### TECH_STACK.md
 
-Examples:
+**제품을 어떤 기술적 제약 안에서 구현해야 하는지** 정의합니다.
 
-- React Router
-- i18next
-- Zustand
-- TanStack Query
+사용할 기술, 버전, 필수 구성, 금지 사항 및 프로젝트의 개발 환경과 관련된 중요한 제약을 기록합니다.
 
-### architecture.md
+### ARCHITECTURE.md
 
-Project-specific architecture decisions.
+**제품이 내부적으로 어떻게 동작하는지** 정의합니다.
 
-### tasks.md
+시스템의 책임 분리, 정보의 흐름, 구성 요소 간 관계, 주요 동작 구조와 반드시 유지해야 하는 불변조건을 설명합니다.
 
-Current project status and roadmap.
+가능한 한 특정 구현 기술에 종속되지 않는 구조적 정의를 담당합니다.
 
-### AI_MEMORY.md
+### TASKS.md
 
-Long-term project memory preserved across future sessions.
+**현재 무엇을 구현해야 하는지** 정의합니다.
 
-## Example Workflow
+구현 작업을 작은 단위로 나누고, 현재 작업의 범위와 진행 상태를 관리합니다.
 
-Choose a framework:
+TASKS.md에 정의되지 않은 미래 작업이나 아이디어를 AI가 임의로 구현해서는 안 됩니다.
+
+## 문서의 관계
+
+다섯 문서는 서로 다른 질문에 답합니다.
 
 ```text
-react-vite.md
+PRODUCT_SPEC.md
+        │
+        │ 무엇을 만드는가?
+        ▼
+TECH_STACK.md
+        │
+        │ 어떤 기술적 제약으로 만드는가?
+        ▼
+ARCHITECTURE.md
+        │
+        │ 어떻게 동작하는가?
+        ▼
+TASKS.md
+        │
+        │ 지금 무엇을 구현하는가?
+        ▼
+      Code
 ```
 
-Add required extensions:
+`AGENTS.md`는 이 전체 과정에서 AI가 문서를 어떻게 사용해야 하는지를 정의합니다.
+
+문서 간 충돌이 발생할 경우 프로젝트에 정의된 **Source of Truth 순서**에 따라 판단합니다.
+
+## 구현 전 검증
+
+ReplWorks에서는 문서를 작성했다고 바로 구현을 시작하지 않습니다.
+
+`PRODUCT_SPEC.md`, `TECH_STACK.md`, `ARCHITECTURE.md`를 하나의 구현 계약으로 보고 먼저 구현 가능 여부를 검증합니다.
+
+검증의 목적은 다음과 같습니다.
+
+- 요구사항이 빠져 있지 않은가?
+- 아키텍처 책임이 정의되어 있는가?
+- 필요한 기술적 제약이 정의되어 있는가?
+- 동작이 모호하지 않은가?
+- 입력과 출력이 정의되어 있는가?
+- 구성 요소의 책임이 명확한가?
+- 문서 사이에 충돌이 없는가?
+- 구현을 위해 AI가 추측해야 하는 부분이 남아 있는가?
+
+구현을 막는 질문이 남아 있다면 구현을 시작하지 않습니다.
+
+> **모르는 것을 추측해서 구현하는 것보다, 구현을 멈추고 질문하는 것이 안전합니다.**
+
+## UNVERIFIED
+
+문서에 정의되지 않은 중요한 동작을 발견했을 때 AI는 임의로 가정을 만들어서는 안 됩니다.
+
+해당 영역을 `UNVERIFIED`로 표시하고 필요한 정보를 확인한 뒤 문서를 갱신해야 합니다.
+
+특히 외부 시스템이나 외부 런타임의 동작은 추측하지 않습니다.
+
+실제 동작을 확인할 수 있다면 관찰하고, 확인되지 않은 동작은 구현 계약에 포함시키지 않습니다.
+
+이 원칙을 통해 다음과 같은 문제를 줄일 수 있습니다.
 
 ```text
-react-router.md
-i18next.md
-lucide-react.md
+문서에 없음
+    ↓
+AI가 추측
+    ↓
+잘못된 구현
+    ↓
+나중에 수정
 ```
 
-Generate:
+대신 다음 흐름을 사용합니다.
 
 ```text
-framework.md
+문서에 없음
+    ↓
+UNVERIFIED
+    ↓
+확인 / 문서화
+    ↓
+구현
 ```
 
-Use with:
+## Prompts
+
+이 저장소에는 핵심 문서를 작성하고 검증하기 위해 사용하는 프롬프트도 함께 제공합니다.
 
 ```text
-agent.md
-architecture.md
-tasks.md
+prompts/
+├── ARCHITECTURE_PROMPT.txt
+├── PRODUCT_SPEC_PROMPT.txt
+├── REVIEW_IMPLEMENTATION_READINESS_PROMPT.txt
+├── TASKS_PROMPT.txt
+└── ...
 ```
 
-The AI agent now has deterministic implementation rules instead of making assumptions.
+프롬프트는 문서를 대신하는 것이 아닙니다.
 
-## Design Principles
+프롬프트는 **프로젝트 문서를 일관된 방식으로 만들고 검증하기 위한 도구**입니다.
 
-### Constraints Over Explanations
-
-Prefer:
+일반적인 흐름은 다음과 같습니다.
 
 ```text
-DO_NOT_CREATE_NEW_TOP_LEVEL_DIRECTORIES
+아이디어 / 요구사항
+        ↓
+PRODUCT_SPEC.md
+        ↓
+TECH_STACK.md
+        ↓
+ARCHITECTURE.md
+        ↓
+Implementation Readiness Review
+        ↓
+TASKS.md
+        ↓
+AI Coding Agent
+        ↓
+Code
 ```
 
-Over:
+문서를 만드는 과정은 사람과 AI의 대화를 통해 진행할 수 있습니다.
 
-```text
-Developers should generally avoid...
-```
+AI가 질문하고, 사람이 결정하고, 결정된 내용을 문서에 반영합니다.
 
-### Structure Over Flexibility
+따라서 이 저장소의 문서는 단순한 템플릿 모음이 아니라 **AI와 함께 프로젝트를 정의하기 위한 문서 체계**입니다.
 
-Consistency is more valuable than unlimited freedom.
+## 저장소의 역할
 
-### Versions Matter
+ReplWorks Documents는 ReplWorks에서 사용하는 프로젝트 문서 체계와 이를 만들기 위한 프롬프트의 원본을 관리합니다.
 
-Framework specifications should define versions.
+문서는 실제 프로젝트에 복사하여 사용하거나, 프로젝트의 요구사항에 맞게 수정하여 사용할 수 있습니다.
 
-AI agents frequently assume incorrect versions when versions are not explicitly stated.
+ReplWorks에서 이 문서 체계를 설명하고 기록하는 자료와 함께 사용할 수 있도록 설계되어 있습니다.
 
-### Reuse Over Reinvention
+## 핵심 원칙
 
-Framework specifications should be reusable across many projects.
+### 1. AI는 추측하지 않습니다.
 
-Project-specific decisions belong in architecture.md.
+정의되지 않은 요구사항을 임의로 만들어서는 안 됩니다.
 
-## Validation
+### 2. 문서가 구현보다 먼저입니다.
 
-Lint markdown files:
+코드가 문서에 정의된 요구사항과 구조를 따라야 합니다.
 
-```bash
-npm run lint
-```
+### 3. 각 문서는 하나의 책임을 가집니다.
 
-Fix markdown issues:
+제품 요구사항, 기술 스택, 아키텍처, 작업 계획을 하나의 문서에 섞지 않습니다.
 
-```bash
-npm run lint:fix
-```
+### 4. 불확실성은 숨기지 않습니다.
 
-Check formatting:
+확인되지 않은 동작은 `UNVERIFIED`로 명시합니다.
 
-```bash
-npm run format:check
-```
+### 5. 구현 범위를 임의로 확장하지 않습니다.
 
-Format all documents:
+현재 작업에 필요한 범위만 구현합니다.
 
-```bash
-npm run format
-```
+### 6. 외부 동작을 추측하지 않습니다.
 
-Validate repository:
+외부 시스템의 실제 동작을 확인할 수 없는 경우 가정을 사실처럼 취급하지 않습니다.
 
-```bash
-npm run validate
-```
+## 프로젝트의 목표
 
-## Status
+ReplWorks Documents가 해결하려는 문제는 **AI가 코드를 작성하지 못하는 문제**가 아닙니다.
 
-Work in progress.
+오히려 AI가 코드를 너무 쉽게 작성하기 때문에 발생하는 문제입니다.
 
-Current focus:
+AI가 프로젝트의 의도를 정확하게 알지 못한 상태에서도 그럴듯한 코드를 만들어낼 수 있기 때문입니다.
 
-- framework specifications
-- extension specifications
-- specification composition
-- AI implementation consistency
+ReplWorks Documents는 프로젝트의 중요한 결정을 문서로 명시하고, AI가 그 경계를 벗어나지 않도록 합니다.
+
+결국 목표는 다음과 같습니다.
+
+> **AI에게 더 많은 자유를 주는 것이 아니라, AI가 무엇을 알고 무엇을 모르는지를 명확하게 만드는 것.**
+
+그리고 모르는 것이 있다면:
+
+> **추측하지 않고 멈추는 것.**
 
 ## License
 
