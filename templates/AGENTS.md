@@ -3,8 +3,10 @@
 ## DOCUMENT_ORDER
 
 1. AGENTS.md
-2. ./replworks/ARCHITECTURE.md
-3. ./replworks/TASKS.md
+2. ./replworks/PRODUCT_SPEC.md
+3. ./replworks/TECH_STACK.md
+4. ./replworks/ARCHITECTURE.md
+5. ./replworks/TASKS.md
    Only these documents are authoritative.
 
 ---
@@ -24,6 +26,18 @@ Never implement features described only in docs/.
 
 ## SOURCE_OF_TRUTH
 
+Product Requirements:
+
+```text
+PRODUCT_SPEC.md
+```
+
+Implementation Constraints:
+
+```text
+TECH_STACK.md
+```
+
 Architecture:
 
 ```text
@@ -39,6 +53,10 @@ TASKS.md
 If a conflict exists:
 
 ```text
+PRODUCT_SPEC.md
+>
+TECH_STACK.md
+>
 ARCHITECTURE.md
 >
 TASKS.md
@@ -49,6 +67,19 @@ everything else
 ---
 
 ## DOCUMENT_RESPONSIBILITIES
+
+PRODUCT_SPEC.md defines:
+
+```text
+What the product is.
+What the product does.
+```
+
+TECH_STACK.md defines:
+
+```text
+How the product must be implemented.
+```
 
 ARCHITECTURE.md defines:
 
@@ -93,9 +124,16 @@ assumptions
 inferred requirements
 ```
 
+Requirements must originate from:
+
+```text
+PRODUCT_SPEC.md
+```
+
 Implementation must follow:
 
 ```text
+TECH_STACK.md
 ARCHITECTURE.md
 ```
 
@@ -139,6 +177,29 @@ inferred event flow
 If a mock's values cannot be traced to a recorded observation or a spec, do not write it.
 Any code touching an EXTERNAL_BOUNDARY requires at least one live observation before it may be mocked.
 Re-verify mocks when the external system's behavior may have changed.
+
+---
+
+## PRODUCT_SPEC_CHANGES
+
+If implementation reveals missing product requirements, or a PRODUCT_SPEC.md section is marked UNVERIFIED:
+
+```text
+Stop.
+Do not invent requirements.
+```
+
+Update PRODUCT_SPEC.md, and clear the UNVERIFIED mark only after human confirmation, before implementation continues.
+
+---
+
+## TECH_STACK_CHANGES
+
+If implementation requires tech stack changes:
+
+1. Update TECH_STACK.md
+2. Update implementation
+   Never allow tech stack and code to diverge.
 
 ---
 
