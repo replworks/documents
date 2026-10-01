@@ -74,7 +74,7 @@ AI는 일반적인 개발 지식보다 현재 프로젝트의 규칙을 더 필�
 예시:
 
 ```text
-frameworks/
+tech-stacks/
  ├─ REACT_VITE.md
  ├─ NEXTJS.md
  ├─ LARAVEL.md

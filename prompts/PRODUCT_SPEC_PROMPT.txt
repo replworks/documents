@@ -17,7 +17,7 @@ Do not describe architecture.
 
 Do not describe technologies.
 
-Do not describe frameworks.
+Do not describe tech stacks.
 
 Do not describe programming languages.
 

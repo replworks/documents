@@ -195,11 +195,11 @@ Update PRODUCT_SPEC.md, and clear the UNVERIFIED mark only after human confirmat
 
 ## TECH_STACK_CHANGES
 
-If implementation requires framework changes:
+If implementation requires tech stack changes:
 
 1. Update TECH_STACK.md
 2. Update implementation
-   Never allow framework and code to diverge.
+   Never allow tech stack and code to diverge.
 
 ---
 
@@ -254,7 +254,7 @@ Task is complete only when:
 
 - product requirements satisfied
 - architectural requirements satisfied
-- framework constraints satisfied
+- tech stack constraints satisfied
 - acceptance criteria satisfied
 - no UNVERIFIED sections remain in scope for this task
 - code runs
