@@ -13,6 +13,7 @@ DEFINE_DOCUMENT_RELATIONSHIPS
 ## PROJECT_DOCUMENTS
 
 ```text
+TECH_STACK.md
 ARCHITECTURE.md
 TASKS.md
 AGENTS.md
@@ -155,7 +156,7 @@ DEFINES_AGENT_BEHAVIOR
 ## TECH_STACK_TEMPLATE_FLOW
 
 ```text
-tech-stack/REACT_VITE.md
+tech-stacks/REACT_VITE.md
                 ↓
 project/TECH_STACK.md
 ```

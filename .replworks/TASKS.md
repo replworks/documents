@@ -4,7 +4,7 @@
 
 Build a reusable AI-first documentation system for software projects.
 
-The system should allow developers to compose framework.md from framework specifications and package extensions.
+The system should allow developers to compose TECH_STACK.md from framework specifications and package extensions.
 
 ---
 
@@ -35,7 +35,7 @@ The system should allow developers to compose framework.md from framework specif
 - [x] REACT_VITE.md
 - [x] ASTRO.md
 - [x] VANILLA.md
-- [ ] NEXTJS.md
+- [x] NEXTJS.md
 - [ ] REMIX.md
 
 ### Laravel Ecosystem
@@ -44,13 +44,18 @@ The system should allow developers to compose framework.md from framework specif
 
 ### Python Ecosystem
 
-- [ ] FASTAPI.md
+- [x] FASTAPI.md
 - [ ] DJANGO.md
 
 ### Additional Frameworks
 
 - [ ] NUXT.md
 - [ ] SVELTEKIT.md
+
+### CLI Ecosystem
+
+- [x] GO_CLI.md
+- [x] NODE_CLI.md
 
 ---
 
@@ -103,7 +108,7 @@ The system should allow developers to compose framework.md from framework specif
 
 ### Framework Assembly
 
-- [ ] Design framework.md generation flow
+- [ ] Design TECH_STACK.md generation flow
 - [ ] Design extension loading flow
 - [ ] Design merge strategy
 - [ ] Design override strategy
@@ -128,7 +133,7 @@ The system should allow developers to compose framework.md from framework specif
 
 ### Generation
 
-- [ ] Generate framework.md
+- [ ] Generate TECH_STACK.md
 - [ ] Generate project documents
 - [ ] Update existing documents
 
@@ -169,7 +174,7 @@ The system should allow developers to compose framework.md from framework specif
 
 - [ ] Auto-detect framework
 - [ ] Auto-detect packages
-- [ ] Auto-generate framework.md
+- [ ] Auto-generate TECH_STACK.md
 
 ### AI Integration
 
@@ -183,7 +188,7 @@ The system should allow developers to compose framework.md from framework specif
 
 - [ ] Framework specifications are reusable
 - [ ] Extension specifications are composable
-- [ ] framework.md can be generated automatically
+- [ ] TECH_STACK.md can be generated automatically
 - [ ] AI implementation consistency improves
 - [ ] AI architectural drift decreases
 - [ ] AI guesswork is minimized
