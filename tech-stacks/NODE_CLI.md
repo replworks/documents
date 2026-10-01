@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document defines the implementation framework for all projects using the following stack:
+This document defines the implementation tech stack for all projects using the following stack:
 
 - Node.js
 - TypeScript
@@ -15,7 +15,7 @@ All implementation must comply with this document.
 
 If any conflict exists between documents:
 
-> framework.md takes priority over all other specifications except IMPLEMENTATION_CONSTITUTION.md.
+> TECH_STACK.md takes priority over all other specifications except IMPLEMENTATION_CONSTITUTION.md.
 
 ---
 
@@ -34,7 +34,7 @@ Rules:
 - Do not use alternative runtimes (Bun, Deno, etc.)
 - Do not replace Playwright with other automation tools
 - Do not mix multiple runtimes
-- Do not assume framework defaults
+- Do not assume tech stack defaults
 
 ---
 
@@ -183,9 +183,9 @@ Types must reflect runtime reality.
 
 ---
 
-## CLI Framework Rules
+## CLI Tech Stack Rules
 
-A structured CLI framework MUST be used.
+A structured CLI tech stack MUST be used.
 
 Recommended:
 
@@ -341,12 +341,12 @@ Once defined:
 
 Refactoring is allowed only if:
 
-- framework.md is updated accordingly
+- TECH_STACK.md is updated accordingly
 - IMPLEMENTATION_CONSTITUTION.md is updated if required
 
 ---
 
-## Framework Invariants
+## Tech Stack Invariants
 
 The following conditions MUST always remain true:
 
@@ -358,7 +358,7 @@ The following conditions MUST always remain true:
 - No hidden architecture layers exist
 - No runtime ambiguity in versioned dependencies
 
-Any violation is considered a framework-level failure.
+Any violation is considered a tech-stack-level failure.
 
 ---
 

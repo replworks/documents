@@ -18,7 +18,7 @@ Do not describe architecture.
 
 Do not describe technologies.
 
-Do not describe frameworks.
+Do not describe tech stacks.
 
 Do not describe implementation details.
 
@@ -53,7 +53,7 @@ Avoid:
 
 - implementation steps
 - code-level instructions
-- framework-specific instructions
+- tech-stack-specific instructions
 
 Include:
 

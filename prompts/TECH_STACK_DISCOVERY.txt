@@ -1,8 +1,8 @@
 Assume PRODUCT_SPEC.md and ARCHITECTURE.md already exist and are correct.
 
-The purpose of this task is NOT to generate framework.md.
+The purpose of this task is NOT to generate TECH_STACK.md.
 
-The purpose is to discover every implementation decision required to generate framework.md.
+The purpose is to discover every implementation decision required to generate TECH_STACK.md.
 
 Do not infer missing decisions.
 
@@ -10,7 +10,7 @@ Do not assume defaults.
 
 Do not recommend technologies unless explicitly asked.
 
-Do not generate framework.md.
+Do not generate TECH_STACK.md.
 
 Do not generate code.
 
@@ -57,11 +57,11 @@ Determine:
 
 ---
 
-## UI Framework
+## UI Tech stack
 
 Determine:
 
-- user interface framework
+- user interface tech stack
 
 ---
 
@@ -207,7 +207,7 @@ Rules:
 
 - Ask only one question at a time.
 - Never assume missing decisions.
-- Never generate framework.md.
+- Never generate TECH_STACK.md.
 - Never generate code.
 - Never continue automatically.
 - Wait after every answer.

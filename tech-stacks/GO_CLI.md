@@ -1,6 +1,6 @@
 # go-cli.md
 
-# AI Issue Publisher Framework
+# AI Issue Publisher Tech Stack
 
 ## Purpose
 
@@ -8,7 +8,7 @@ This document defines implementation constraints.
 
 product.md defines what must be built.
 
-framework.md defines how it must be built.
+TECH_STACK.md defines how it must be built.
 
 Implementations must follow this document exactly.
 
@@ -60,7 +60,7 @@ The application must execute as a standalone command-line tool.
 
 ---
 
-# CLI Framework
+# CLI Tech Stack
 
 Use:
 
@@ -68,7 +68,7 @@ Use:
 github.com/spf13/cobra
 ```
 
-Do not introduce additional CLI frameworks.
+Do not introduce additional CLI tech stacks.
 
 ---
 
@@ -327,7 +327,7 @@ Use:
 Go standard testing package
 ```
 
-Do not introduce testing frameworks.
+Do not introduce testing tech stacks.
 
 Test:
 
@@ -383,7 +383,7 @@ These are outside the scope of the project.
 
 ---
 
-# Framework Invariants
+# Tech Stacks Invariants
 
 The following conditions must always hold:
 
